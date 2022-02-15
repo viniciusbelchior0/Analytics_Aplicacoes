@@ -74,21 +74,21 @@ y = tanzania_train['total_cost']
 lreg = LinearRegression().fit(X,y)
 
 print('R-squared score (training): {:.3f}'
-.format(lreg.score(X_train, y_train)))
+.format(lreg.score(X, y)))
 print('R-squared score (test): {:.3f}'
-.format(lreg.score(X_test, y_test)))
+.format(lreg.score(X, y)))
 
-lreg_pred = lreg.predict(X_test)
+lreg_pred = lreg.predict(X)
 
 lreg_pred
 
 # Commented out IPython magic to ensure Python compatibility.
 print('Mean squared error: %.2f'
-#       % mean_squared_error(lreg_pred, y_test))
+#       % mean_squared_error(lreg_pred, y))
 
 # Commented out IPython magic to ensure Python compatibility.
 print('Coefficient of determination: %.2f'
-#       % r2_score(lreg_pred, y_test))
+#       % r2_score(lreg_pred, y))
 
 """###3. StatsModel"""
 
