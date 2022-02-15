@@ -4,7 +4,7 @@ library(asbio)
 library(MASS)
 options(scipen = 999, digits = 2)
 
-tanzania <- read.csv("C:\\Users\\NOTEBOOK CASA\\Desktop\\Modelos\\-- Possíveis Análises --\\Estudos de Caso\\Tanzania\\Tanzania Travel Spending\\Data\\tanzania_train.csv")
+tanzania <- read.csv("tanzania_train.csv")
 
 
 #1. Data Cleaning ####
@@ -22,7 +22,7 @@ tanzania <- tanzania %>% mutate(travel_with = replace_na(travel_with,"Unknown"),
 
 # Ajustando o nome dos paises + feature engineering: relacionando com o continente e o subcontinente
 
-countries <- read.csv2("C:\\Users\\NOTEBOOK CASA\\Desktop\\Modelos\\-- Possíveis Análises --\\Estudos de Caso\\Tanzania\\Tanzania Travel Spending\\countries.csv") #carregando a nova base
+countries <- read.csv2("countries.csv") #carregando a nova base
 
 tanzania <- left_join(tanzania, countries, by = c("country" = "ï..country"))
 
