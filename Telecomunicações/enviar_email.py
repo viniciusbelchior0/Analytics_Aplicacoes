@@ -6,8 +6,8 @@ import win32com.client as win32
 
 def enviar_email():
 
-    sheet_id = "1vqKnT5Sux9NNiV2hPlim4N13SJsc-SaIXq_zdhaCpCY"
-    sheet_name = "db_clientesinfo"
+    sheet_id = "endereco da planilha"
+    sheet_name = "nome da guia"
     url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}"
     base_clientes = pd.read_csv(url, decimal=",")
     lista = base_clientes[base_clientes.Churn == "Sim"]
@@ -24,9 +24,9 @@ def enviar_email():
 
     msg = email.message.Message()
     msg['Subject'] = (f"Alerta - {qtd_clientes} clientes sob risco, em um valor total de {ltv_estimado}")
-    msg['From'] = 'bot.analytics.auto@gmail.com'
-    msg['To'] = 'viniciusbelchior0@gmail.com'
-    password = 'VFzISsBM8L'
+    msg['From'] = 'bot.analytics@email.com'
+    msg['To'] = 'destinatario@email.com'
+    password = 'senha'
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email)
 
