@@ -6,6 +6,9 @@ options(scipen = 999, digits = 2)
 
 tanzania <- read.csv("tanzania_train.csv")
 
+# Analisando de maneira rápida o comportamento das variáveis e seus tipos
+library(summarytools)
+summarytools::view(dfSummary(tanzania))
 
 #1. Data Cleaning ####
 str(tanzania)
@@ -52,7 +55,7 @@ summary(tanzania)
 tanzania_clean <- tanzania %>% filter(pvalue >= 0.001) %>% dplyr::select(-c(33,34))
 
 
-# 2. Moledando com Regressão Linear ####
+# 2. Modelando com Regressão Linear ####
 
 #Vamos modelar as vendas com base em um modelo de regressão linear
 
