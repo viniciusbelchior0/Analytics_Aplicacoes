@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import matplotlib as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from sklearn.model_selection import GridSearchCV
@@ -73,6 +74,15 @@ predict5 = rfc_bp.predict(X_test)
 print(classification_report(y_test,predict5))
 print(confusion_matrix(y_test,predict5))
 print(accuracy_score(y_test,predict5))
+
+# visualizando a importância das variáveis
+importances = rfc_bp.feature_importances_
+sorted_index = np.argsort(importances)
+labels = X_train.columns[sorted_index]
+plt.clf()
+plt.barh(range(X_train.shape[1]), importances[sorted_index], tick_label=labels)
+plt.show()
+
 
 # exportando o classificador
 import joblib
