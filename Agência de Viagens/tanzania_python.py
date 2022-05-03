@@ -1,9 +1,14 @@
 import pandas as pd
 import numpy as np
+from pandas-profiling import ProfileReport
 
 tanzania = pd.read_csv("/content/tanzania_train.csv")
 
 countries = pd.read_csv("/content/countries.csv", sep=";")
+
+#Semelhante ao dfSummary(summarytools) do R
+profile = ProfileReport(tanzania)
+profile.to_file("profile.html") # gera um arquivo HTML
 
 tanzania.head()
 
