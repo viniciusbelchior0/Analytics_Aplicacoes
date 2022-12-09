@@ -1,8 +1,8 @@
 library(tidyverse)
 library(readxl)
 
-WorldCupMatches <- read_excel("C:/Users/NOTEBOOK CASA/Downloads/WorldCupMatches.xlsx", sheet = "Matches")
-TopStandings <- read_excel("C:/Users/NOTEBOOK CASA/Downloads/WorldCupMatches.xlsx", sheet = "Top_Standings")
+WorldCupMatches <- read_excel("WorldCupMatches.xlsx", sheet = "Matches")
+TopStandings <- read_excel("WorldCupMatches.xlsx", sheet = "Top_Standings")
 
 data <- WorldCupMatches %>% select(-c(8,9,10))
 TopStandings <- TopStandings %>% mutate(ID = paste(Team, "_", Tournament))
