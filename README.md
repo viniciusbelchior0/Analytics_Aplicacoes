@@ -8,7 +8,7 @@ Exemplos concretos da aplicação da análise de dados em diferentes contextos. 
 3. Analisando um E-commerce
 4. Combatendo o 'Churn'
 
-*Outros Repositórios*:
+Outros Repositórios:
 * **DataCamp**
   1. Certifications
   2. Competitions
