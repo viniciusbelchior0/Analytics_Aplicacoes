@@ -2,6 +2,22 @@
 
 Exemplos concretos da aplicação da análise de dados em diferentes contextos. Procura-se elucidar as etapas do processo, assim como fundamentar o racional utilizado para o embasamento da tomada de decisões. <em>Analytics</em> é um conjunto de práticas a ser adotado e independe de ferramentas específicas, por isso, diversas delas serão utilizadas.
 
+1. Agência de Viagens
+2. Agência de Viagens
+3. Analisando um E-commerce
+4. Combatendo o 'Churn'
+
+Outros Repositórios:
+* DataCamp
+  1. Certifications
+  2. Competitions
+  3. Projects
+  4. Case Studies
+
+* Alura
+  1. Challenges
+   
+
 ## Projetos
 
 * Agência de Viagens: Tanzânia é um país localizado na áfrica oriental, possuindo vastas áreas selvagens com fauna exuberante e praias paradisíacas. O governo busca ações para atrair novos viajantes, assim como fazer com que alguns retornem. Dados foram coletados e, com base no passado - utlizando-se de técnicas descritivas e preditivas - gerar insights para o direcionamento dessas ações.
