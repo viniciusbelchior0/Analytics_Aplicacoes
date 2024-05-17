@@ -2,20 +2,20 @@
 
 Exemplos concretos da aplicação da análise de dados em diferentes contextos. Procura-se elucidar as etapas do processo, assim como fundamentar o racional utilizado para o embasamento da tomada de decisões. <em>Analytics</em> é um conjunto de práticas a ser adotado e independe de ferramentas específicas, por isso, diversas delas serão utilizadas.
 
-Sumário de Projetos:
+**Sumário de Projetos**:
 1. Acidentes em Rodovias Federais
 2. Agência de Viagens
 3. Analisando um E-commerce
 4. Combatendo o 'Churn'
 
-Outros Repositórios:
-* DataCamp
+*Outros Repositórios*:
+* **DataCamp**
   1. Certifications
   2. Competitions
   3. Projects
   4. Case Studies
 
-* Alura
+* **Alura**
   1. Challenges
    
 
