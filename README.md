@@ -12,12 +12,7 @@ Outros Repositórios:
 * **DataCamp**
   1. Certifications
   2. Competitions
-  3. Projects
-  4. Case Studies
 
-* **Alura**
-  1. Challenges
-   
 
 ## Descrição dos Projetos
 
